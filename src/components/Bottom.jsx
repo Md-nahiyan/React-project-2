@@ -1,8 +1,22 @@
 import React from 'react'
-// import ScroollImage from './ScroollImage'
-// import ScroollImage from './ScroollImage'
+import { useRef, useEffect, } from 'react';
+import logo from '../assets/images/svg-image-24.svg';
+import logo1 from '../assets/images/svg-image-25.svg';
+import logo2 from '../assets/images/svg-image-26.svg';
+import logo3 from '../assets/images/svg-image-27.svg';
 
 export default function Bottom() {
+
+  const logosRef = useRef(null);
+  
+  useEffect(() => {
+    const ul = logosRef.current;
+    if (ul) {
+      ul.insertAdjacentHTML('afterend', ul.outerHTML);
+      ul.nextSibling.setAttribute('aria-hidden', 'true');
+    }
+  }, []);
+
   return (
     <div className=' w-[72%]  mx-auto'>
       <div className='text-center'>
@@ -49,6 +63,68 @@ export default function Bottom() {
           </iframe>
         </div>
 
+        <p className='text-center font-semibold text-[#414244] text-[18px] leading-[27px] font-inter mb-10'>Trusted by 40+ worldwide clients</p>
+
+        <div>
+            <div className="relative font-inter antialiased ">
+              <main className="relative flex flex-col justify-center  overflow-hidden">
+                <div className="w-full  mx-auto px-4 md:px-6 py-10">
+                  <div className="text-center">
+    
+                  {/* Logo Carousel Animation */}
+                  <div
+                    className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+                  >
+                    <ul
+                      ref={logosRef}
+                      className="flex items-center justify-center gap-7 md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+                    >
+
+                      <li>
+                          <img src={logo}  alt="" />
+                       </li>
+
+
+                        <li >
+                          <img src={logo1}  alt="" />
+                       </li>
+
+                        <li >
+                          <img src={logo2}  alt="" />
+                       </li>
+
+                        <li >
+                          <img src={logo3}  alt="" />
+                       </li>
+
+
+                        <li >
+                          <img src={logo}  alt="" />
+                       </li>
+
+                        <li >
+                          <img src={logo1}  alt="" />
+                       </li>
+
+
+                        <li >
+                          <img src={logo2}  alt="" />
+                       </li>
+
+
+                        <li >
+                          <img src={logo3}  alt="" />
+                       </li>
+                    </ul>
+                  </div>
+                  {/* End: Logo Carousel Animation */}
+      
+                </div>
+              </div>
+            </main>
+            
+          </div>
+        </div>
         {/* <ScroollImage/> */}
     </div>
   )

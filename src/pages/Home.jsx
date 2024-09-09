@@ -6,7 +6,8 @@ import Content from '../components/Content'
 import Testimonials from '../components/Testimonials'
 import Process from '../components/Process'
 import Pricing from '../components/Pricing'
-import Faq from '../components/Faq'
+
+import Accordian from '../components/Acordian'
 
 // import './App.css'
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
       <Testimonials/>
       <Process/>
       <Pricing/>
-      <Faq/>
+      <Accordian/>
     </div>
   )
 }
