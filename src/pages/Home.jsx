@@ -1,8 +1,13 @@
-import React from 'react'
+
 import Header from '../components/Header'
 import Bottom from '../components/Bottom'
 import Services from '../components/Services'
 import Content from '../components/Content'
+import Testimonials from '../components/Testimonials'
+import Process from '../components/Process'
+import Pricing from '../components/Pricing'
+import Faq from '../components/Faq'
+
 // import './App.css'
 export default function Home() {
   return (
@@ -11,6 +16,10 @@ export default function Home() {
       <Bottom/>
       <Services/>
       <Content/>
+      <Testimonials/>
+      <Process/>
+      <Pricing/>
+      <Faq/>
     </div>
   )
 }
