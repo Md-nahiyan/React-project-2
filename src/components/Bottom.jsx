@@ -20,8 +20,8 @@ export default function Bottom() {
   return (
     <div className=' w-[72%]  mx-auto'>
       <div className='text-center'>
-          <h1 className='text-[80px] leading-[85px] text-center font-bold text-[#1e2832] mt-[80px] mx-[140px]'>Save time &
-              work smarter 
+          <h1 className='text-[70px] leading-[85px] text-center font-bold text-[#1e2832] mt-[80px] mx-[110px]'>Save time &
+             <span className='text-[#2159ff]'> work smarter <br/></span> 
                with AI Automation
             </h1>
             <p className='w-[500px] mx-auto mt-[20px] font-semibold text-[#424244] text-[18px] leading-[27px] font-inter mb-10'>We help you automate your workflows, automate repetitive tasks, and elevate your business.</p>
