@@ -8,6 +8,7 @@ import Process from '../components/Process'
 import Pricing from '../components/Pricing'
 
 import Accordian from '../components/Acordian'
+import Footer from '../components/Footer'
 
 // import './App.css'
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Process/>
       <Pricing/>
       <Accordian/>
+      <Footer/>
     </div>
   )
 }
